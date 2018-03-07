@@ -13,3 +13,11 @@ EOF
 on_chroot << EOF
 cd /home/pi && mkdir signalk && cd signalk && curl -fsSL  https://api.github.com/repos/tkurki/signalk-server-docker-setup/tarball | tar xz --strip-components=1
 EOF
+
+install -m 644 files/signalk-docker-compose.service ${ROOTFS_DIR}/etc/systemd/system/signalk-docker-compose.service
+mkdir ${ROOTFS_DIR}/etc/signalk-docker-compose
+install -m 644 files/docker-compose.yml ${ROOTFS_DIR}/etc/signalk-docker-compose/docker-compose.yml
+
+on_chroot << EOF
+systemctl enable signalk-docker-compose
+EOF

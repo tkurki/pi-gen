@@ -1,0 +1,23 @@
+version: '2'
+services:
+  signalk:
+    image: "signalk/signalk-server:proper-dockerfile"
+    environment:
+     - EXTERNALHOST=raspberrypi.local
+     - EXTERNALPORT=80
+    ports:
+     - "80:3000"
+     - "10110:10110"
+     - "3858:3858"
+    restart: always
+    privileged: true
+  influxdb:
+    image: "arm32v7/influxdb:1.4"
+    ports:
+     - "8086:8086"
+    restart: always
+  grafana:
+    image: "fg2it/grafana-armhf:v4.1.2"
+    ports:
+     - "3001:3000"
+    restart: always
