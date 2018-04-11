@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "enableLogging": false,
+  "configuration": {
+    "host": "influxdb",
+    "port": 8086,
+    "database": "signalk",
+    "blackOrWhite": "Black"
+  }
+}

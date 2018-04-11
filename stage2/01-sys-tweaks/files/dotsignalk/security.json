@@ -1,0 +1,13 @@
+{
+  "allow_readonly": true,
+  "expiration": "1d",
+  "secretKey": "e21e4fe63bb9d253cf743a9bf5bc69eb104cb97d956f76b50ab6445f2db94adb7218be6c4343e15ebcf3a182887ad29a19f5e74834b1faea08d040cbecfa7d71e9b56c029f2939deb042f188f65f5fcea83f3b90616027d60c00bd86f86b6daae01d2093d1f424b70a0eb84be04debde500cfd8111b3e5743b9c78877533a72ac88b35bcfd46a9ea09ef630f4b8e6f424eaeb472be5ddcfc71fe73bd7152aef838d128533a72ca53a50cedcaeec59b26b9e6a1f966b5c49dd97ffb935b9943db323abe2934b08235fc67b708a99fd4664ebc071bcdc0ac8bebe1722365c3ab1854f7d7c271bb7c125fc75487ae7b59094880690b2bd6a6e8727a03ee187d0513",
+  "users": [
+    {
+      "username": "admin",
+      "type": "admin",
+      "password": "$2a$10$M.BjXRJEd3CLtRr1lq8Iue8g/6EYWax/ipuLn4IwrHfSlSc.1.IuS"
+    }
+  ],
+  "immutableConfig": false
+}
