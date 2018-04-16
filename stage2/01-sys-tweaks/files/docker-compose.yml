@@ -1,7 +1,7 @@
 version: '2'
 services:
   signalk:
-    image: "signalk/signalk-server:master"
+    image: "signalk/signalk-server:latest"
     environment:
      - EXTERNALHOST=raspberrypi.local
      - EXTERNALPORT=80
