@@ -24,7 +24,6 @@ install -v -d "${ROOTFS_DIR}/home/pi/signalk-docker-data/grafana"
 
 install -v -d "${ROOTFS_DIR}/home/pi/.signalk/plugin-config-data"
 install -m 644 files/dotsignalk/package.json ${ROOTFS_DIR}/home/pi/.signalk/package.json
-install -m 644 files/dotsignalk/security.json ${ROOTFS_DIR}/home/pi/.signalk/security.json
 install -m 644 files/dotsignalk/settings.json ${ROOTFS_DIR}/home/pi/.signalk/settings.json
 chown -R 999:999 ${ROOTFS_DIR}/home/pi/.signalk/
 install -v -d "${ROOTFS_DIR}/home/pi/.signalk/plugin-config-data"
